@@ -145,11 +145,11 @@
 }
 @font-face {
    font-family: pusab;
-   src: url(fnt/Pusab.ttf);
+   src: url(/fnt/Pusab.ttf);
 }
 @font-face {
    font-family: lemon;
-   src: url(fnt/lemon.ttf);
+   src: url(/fnt/lemon.ttf);
 }
 
 
