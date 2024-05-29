@@ -1,87 +1,150 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PrismGDPS</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="//cdn.obeygdbot.xyz/css/dashboard.css?v=14">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+ 
+    <style>
+        @font-face {
+            font-family: pusab;
+            src: url(fnt/Pusab.otf);
+        }
+ 
+        .songscontent {
+            border: 3px solid transparent;
+        }
+ 
+        .dashboard-container.gdbox-brown.songs {
+            margin-top: 1%;
+            margin-left: calc(5vw + (10vw / 1000));
+            margin-right: calc(5vw + (10vw / 1000));
+            margin-bottom: 1%;
+        }
+ 
+        .img {
+            border: 3px solid #ffffff;
+            border-radius: 25px;
+            box-shadow: 0px 0px 20px black;
+        }
+ 
+        .title {
+            font-family: pusab;
+            color: white;
+            text-shadow: 0px 0px 6px black;
+            -webkit-text-stroke: 1px black;
+            font-size: 50px;
+        }
+ 
+        .desc3 {
+            font-family: pusab;
+            color: white;
+            text-shadow: 0px 0px 6px black;
+            -webkit-text-stroke: 0.6px black;
+            font-size: 15px;
+        }
+ 
+        .desc {
+            font-family: pusab;
+            color: yellow;
+            text-shadow: 0px 0px 6px black;
+            -webkit-text-stroke: 0.6px black;
+            font-size: 15px;
+        }
+ 
+        .Names {
+            font-family: pusab;
+            color: #a5ff55;
+            text-shadow: 0px 0px 6px black;
+            -webkit-text-stroke: 1px black;
+            font-size: 25px;
+        }
+ 
+        img {
+            /* Adjust the values as needed */
+            margin: 10px; /* This adds space to all sides of the image */
+        }
+ 
+        .btnfix {
+            background-color: #25e028;
+            color: white;
+            font-size: 20px;
+            box-shadow: 0px 0px 10px black;
+            text-shadow: 0px 0px 7px black;
+            -webkit-text-stroke: 0.7px black;
+            border-radius: 7px;
+            width: 110px;
+            border: 2px solid #ffffff;
+            font-family: pusab;
+        }
+ 
+        .loading {
+            position: relative;
+            display: none;
+        }
+ 
+        .loading::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            margin: -20px 0 0 -20px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+        }
+ 
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .message{
+            font-family: pusab;
+            color: white;
+            text-shadow: 0px 0px 6px black;
+            -webkit-text-stroke: 0.6px black;
+            font-size: 15px;
+        }
+    </style>
 </head>
-   <body style="background: linear-gradient(#d302ff, #4d31ff);">
+ 
+<body>
     <center>
-    <div class="slider-thumb"></div>
-    <div class="slider-thumb2"></div>
-    <div class="slider-thumb3"></div>
-    <div class="slider-thumb4"></div>
-    <div class="slider-thumb5"></div>
-    <div class="slider-thumb6"></div>
-    <div class="slider-thumb7"></div>
-        <img src="files/prismHeader.png" style="max-width: 90%; height: auto;">
-        <div>
-            <br>
-            <br>
-            <br>
-            <!-- Upper buttons -->
-            <a href="/download"><img src="files/download.png" width="200" hspace="12" class="zoom"></a>
-            <!-- Add buttons below -->
-        </div>
-
-        <br>
-
-        <div>
-            <!-- Lower buttons -->
-            <a href="https://johnrickgdp.ps.fhgdps.com/dashboard/"target="_blank"><img src="files/tools.png" width="200" hspace="12" class="zoom"></a>
-            <a href="https://prismgd.ps.fhgdps.com/dashboard/demonlist"><img src="files/demonlist.png" width="200" hspace="12" class="zoom"></a>
-            <a href="https://gdpshub.com/gdps/1327" target="_blank"><img src="files/gdpshub.png" width="200"
-                    hspace="12" class="zoom"></a>
-            <a href="https://johnrickgdp.ps.fhgdps.com/tools/stats/stats.php" target="_blank"><img src="files/stats.png" width="200" class="zoom"
-                    hspace="12"></a>
-            <a href="mods.html" target="_blank"><img src="files/mods.png" width="200" class="zoom"
-                    hspace="12"></a>
-            <a href="https://johnrickgdp.ps.fhgdps.com/browser/lvls?levelName=*&type=hof" target="_blank"><img src="files/fame.png" width="200" class="zoom"
-                    hspace="12"></a>
-            <a href="https://johnrickgdp.ps.fhgdps.com/info/song.html" target="_blank"><img src="files/song.png" width="200" class="zoom"
-                    hspace="12"></a>
-            <a href="https://m.youtube.com/c/JohnRickGDOfficial" target="_blank"><img src="files/youtube2.png" width="200" class="zoom"
-                    hspace="12"></a>
-            <a href="https://discord.com/invite/TjJnTeegxq" target="_blank"><img src="files/discord.png" width="200" class="zoom"
-                    hspace="12"></a>
-            <a href="http://johnrickgd.141412.xyz/" target="_blank"><img src="files/lvlreq.png" width="200" class="zoom"
-                    hspace="12"></a>
-                    <a href="info.html" target="_blank">
-            <img src="files/info.png" width="200" class="zoom"
-                    hspace="12"></a>
-                    <a href="credits.html" target="_blank">
-<img src="files/credits.png"  width="200" class="zoom"
-                    hspace="12"></a>
-            <!-- Add buttons below -->
-        </div>
-        <br>
-                <br>
-                <br>
-         <img src="files/trailer.png" style="max-width: 70%; height: auto;">
-                <br>
-                <br>
-        <iframe width="920" height="715" src="https://www.youtube.com/embed/AyBhS9iKMfQ">
-</iframe>
-                <br>
-                <br>
-                <img src="files/contesttxt.png" style="max-width: 70%; height: auto;">
-                <br>
-                <img src="files/spider.png" style="max-width: 40%; height: auto;">
-                <img src="files/force.png" style="max-width: 40%; height: auto;">
-                <br>
-                <p class="p3">Time Left</p><p id="demo" class="p3"></p>
-                <br>
-                <br>
-                <br>
-                <br>
-         <img src="files/about.png" style="max-width: 40%; height: auto;">
-        <div class="text">
-            <span class="white">Rick Geometry Dash Private Server where we have our own levels, our own in-game moderators, working top 100 and so on.</span>
-        </div>
-
-        <div class="text">
-            <!-- Do not remove pls -->
-            <span class="white">Template by <span class="blue"><u><a href="https://www.youtube.com/c/ParadoxGDPS"
-                            target="_blank">Starmor</a><span class="blue"><u><a href="https://www.youtube.com/c/JohnRickGDOfficial" target="_blank"> & JohnRickGD</a>
-    </center>
-    <script src="index.js"></script> 
-  </html>
+        <img src="files/logo.png" style="width: 15%; height: auto;" class=""></a>
+ 
+        <body> aaaa wip this is supposed to be prism website
+            <div class="dashboard-container gdbox-brown songs">
+                <h2 class="Names">Upload Song using MP3</h2>
+                <h2 class="desc">Server: 1 </h2>
+                <h2 class="desc">Upload only .m4a, and .mp3</h2>
+                <form id="uploadForm" action="upload.php" method="post" enctype="multipart/form-data">
+                    <label class="desc3" for="mp3_file">Select MP3 File:</label><br>
+                    <input class="gdInput text" type="file" name="mp3_file" id="mp3_file" required><br><br>
+                    <div class="loading"></div><br>
+                    <div class="message" style="display: none;">Please wait we are Processing your song</div>
+                    <input class="btnfix" type="submit" class="button" value="Upload" onclick="upload()">
+                </form>
+                <label class="desc">RGDPS 2.2 Website by JohnRickGD</label>
+        </center>
+    </div>
+    </div>
+ 
+    <script>
+        function upload() {
+            var loading = document.querySelector('.loading');
+            var message = document.querySelector('.message');
+            loading.style.display = 'block';
+            message.style.display = 'block';
+        }
+    </script>
+</body>
+    </html>
