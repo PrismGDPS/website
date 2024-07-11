@@ -138,6 +138,7 @@
 	    width: 48%;
 	    padding: 10px;
 	    box-sizing: border-box;
+	    text-align: center;
 	}
 
         .starrate img, .featuredrate img, .epicrate img {
