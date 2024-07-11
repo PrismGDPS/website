@@ -130,7 +130,7 @@
             font-size: 15px;
 	}
 
-        .starrate, featuredrate, epicrate {
+        .starrate, .featuredrate, .epicrate {
 	    font-family: pusab;
             color: white;
 	    width: 48%;
