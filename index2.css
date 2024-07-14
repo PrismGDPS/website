@@ -249,9 +249,8 @@ i.gdicon[class*="small"]{
 /* Boxes */
 
 div .dashboard-container {
-    margin-left:15%;
     padding:1px 16px;
-   
+    text-align: center;
     
 }
 
@@ -259,12 +258,13 @@ div .dashboard-container p {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 20px;
     color: white;
+    text-align: center;
 }
 
 .dashboard-container.gdbox-brown {
 
-    margin-left:16%;
     margin-right: 1%;
+    text-align: center;
     
     
 
@@ -334,3 +334,10 @@ span.spoiler:hover {
     color: white;
     background-color: #484c52;
 }
+
+        .r {
+        color: orange;
+    }
+        .p {
+        color: #6725F8;
+    }

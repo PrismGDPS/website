@@ -135,7 +135,7 @@
             color: white;
 	    -webkit-text-stroke: 1px black;
 	    text-stroke: 1px black;
-	    width: 48%;
+	    width: 67%;
 	    padding: 10px;
 	    box-sizing: border-box;
 	    text-align: center;
@@ -145,3 +145,7 @@
 	    width: 117px;
 	    height: 117px;
 	}
+
+       .starrate * {
+       text-align: center;
+    }
