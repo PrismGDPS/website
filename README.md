@@ -4,7 +4,7 @@
 		prismWebsite
 	</h3>
  <p align="center">
-  Website for the GDPS <a href="https://prismized.ncservers.xyz">PrismGDPS</a>.
+  Website for the <a href="https://prismized.ps.fhgdps.com">PrismGDPS</a>*
  </h2>
 </p>
 GDPS downloads are on the releases tab.<br>
